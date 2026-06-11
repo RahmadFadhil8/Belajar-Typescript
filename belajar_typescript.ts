@@ -206,8 +206,52 @@ function hay(name:string) :string {
     }
 }
 
+// for loop
+const angka:number[] = [23,34,654,213,45,5467,2431,324] 
+// for i
+for (let i = 0; i<angka.length; i++){
+    console.log(`ini for i: ${i}`)   
+}
+// for of 
+for ( const i of angka) {
+    console.log(`ini for of: ${i}`)
+}
+// for in
+for (const i in angka) {
+    console.log(`ini for in: ${i}`)
+}
 
+// while loop
+let conter:number = 0
+while (conter <10) {
+    console.log(`ini while loop: ${conter}`);
+    conter ++
+}
 
+// do while loop
+let counter:number = 0
+do {
+    console.log(`ini do while loop: ${counter}`)
+    counter++
+} while (counter < 10);
+
+// break dan continue
+// break untuk menghentikan perulanngan 
+// continue melanjutkan ke perulangan selanjutnya
+let conterr:number = 0
+do {
+    conterr ++
+
+    if (conterr == 10) {
+        break
+    }
+
+    if (conterr % 2 == 0) {
+        continue
+    }
+
+    console.log(`ini break dan continue :${conterr}`)
+} while (true);
 
 // console.log(calMe("asddsasad"))
 // console.log(calMe(123))
